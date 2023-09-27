@@ -1,0 +1,17 @@
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* navbar  */
+.navbar {
+  background-color: #434752 !important;
+}
+
+/* home  */
+
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/ba1.jpg");
+}
