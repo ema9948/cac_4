@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AsiaGourmet</title>
+    <link rel="shortcut icon" href="menu.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@1000&family=Hind+Siliguri&family=PT+Sans+Caption&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--//? navbar -->
+    <nav class="navbar navbar-expand-lg bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">
+          <img src="menu.ico" width="25px" alt="" srcset="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-center gap-5"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white active cairo"
+                aria-current="page"
+                href="#home"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cairo text-white" href="#recetas">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cairo text-white" href="#about"
+                >Sobre Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cairo text-white" href="#contact">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-info" type="button">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--//? main -->
+    <main class="d-flex flex-column gap-5">
+      <section class="container hero my5" id="home">
+        <div class="row row-cols-1 row-cols-lg-2 h-100">
+          <div class="col d-flex justify-content-center align-items-center">
+            <div class="scale-up-center">
+              <h1 class="text-white fw-bold cairo fst-italic display-5">
+                Bienvenidos a AsiaGourmet: <br />
+                Descubre los Secretos de la Cocina Asiática
+              </h1>
+              <p class="hindiS text-white-50 fw-medium fs-4 fst-italic">
+                Sumérgete en un Viaje Culinario a Través de los Sabores y
+                Tradiciones de Asia
+              </p>
+              <div class="d-flex gap-3 my-3">
+                <a href="#" class="icon">
+                  <svg
+                    width="2rem"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                        fill="#ffffff"
+                      ></path>
+                      <path
+                        d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                        fill="#ffffff"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+                <a href="#" class="icon">
+                  <svg
+                    width="2rem"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <div class="container">
+              <img
+                class="img-fluid imgEfect"
+                src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container" id="recetas">
+        <div class="row row-cols-1 h-100 w-100 gap-5">
+          <div class="col d-flex justify-content-center">
+            <div class="container text-center">
+              <h2 class="hindiS text-white fs-3 fw-bold fst-italic">
+                Descubre lo Último en Sabores Asiáticos
+              </h2>
+              <h3 class="PT text-white fs-4">
+                En "AsiaGourmet," siempre estamos innovando para llevarte los
+                sabores más auténticos de Asia. Estas son nuestras cuatro
+                recetas más recientes:
+              </h3>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <div class="container">
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <div class="overflow-hidden">
+                      <img
+                        src="https://images.unsplash.com/photo-1648146299011-2322d7ad577c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        class="card-img-top imgHover"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title hindiS fw-bold">
+                        Sushi de Salmón y Aguacate
+                      </h5>
+                      <p class="card-text PT">
+                        Un clásico japonés con arroz, salmón fresco y aguacate,
+                        perfecto para los amantes del sushi.
+                      </p>
+                      <button
+                        type="button"
+                        onclick="modal(0)"
+                        class="btn btn-outline-dark"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        Ver Receta
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="overflow-hidden">
+                      <img
+                        src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        class="card-img-top imgHover"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title hindiS fw-bold">
+                        Pollo al Curry Tailandés
+                      </h5>
+                      <p class="card-text PT">
+                        Disfruta de la explosión de sabores tailandeses con este
+                        plato de pollo en salsa de curry cremosa.
+                      </p>
+                      <button
+                        type="button"
+                        onclick="modal(1)"
+                        class="btn btn-outline-dark"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        Ver Receta
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="overflow-hidden">
+                      <img
+                        src="https://images.unsplash.com/photo-1626509653291-5558b258f107?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        class="card-img-top imgHover"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title hindiS fw-bold">
+                        Fideos Lo Mein con Ternera
+                      </h5>
+                      <p class="card-text PT">
+                        Una delicia china con fideos, ternera y verduras, todo
+                        en una sabrosa salsa.
+                      </p>
+                      <button
+                        type="button"
+                        onclick="modal(2)"
+                        class="btn btn-outline-dark"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        Ver Receta
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="overflow-hidden">
+                      <img
+                        src="https://images.unsplash.com/photo-1541283014184-791fa57c0735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        class="card-img-top imgHover"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title hindiS fw-bold">
+                        Pad Thai de Camarones
+                      </h5>
+                      <p class="card-text PT">
+                        Un plato tailandés picante y dulce con camarones, tofu y
+                        fideos de arroz.
+                      </p>
+                      <button
+                        type="button"
+                        onclick="modal(3)"
+                        class="btn btn-outline-dark"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        Ver Receta
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="text-center w-75">
+              <h2 class="hindiS text-white fs-5">
+                Cada receta incluye instrucciones detalladas para que puedas
+                recrear fácilmente estas delicias en casa. ¡Atrévete a probarlas
+                y disfruta de la magia de la cocina asiática en tu propia
+                cocina! ¡Buen provecho!
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container" id="about">
+        <div class="row">
+          <div class="col d-flex flex-column gap-5">
+            <div>
+              <h2 class="cairo text-center text-white">Acerca de Nosotros</h2>
+            </div>
+            <div class="card mb-3 bg-transparent border-0">
+              <div class="row row-cols-1 row-cols-lg-2 g-0 flex-row-reverse">
+                <div class="">
+                  <img
+                    src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-3 my-3"
+                  >
+                    <a href="#" class="icon">
+                      <svg
+                        width="2rem"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                            fill="#ffffff"
+                          ></path>
+                          <path
+                            d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                            fill="#ffffff"
+                          ></path>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                            fill="#ffffff"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                    <a href="#" class="icon">
+                      <svg
+                        width="2rem"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
+                            fill="#ffffff"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="card-body">
+                    <h5 class="card-title text-bg-warning cairo">
+                      AsiaGourmet
+                    </h5>
+                    <p class="card-text text-start text-white hindiS">
+                      En "AsiaGourmet," estamos apasionados por la diversidad y
+                      la riqueza de los sabores asiáticos. Nuestra misión es
+                      llevarte en un emocionante viaje culinario a través de los
+                      rincones más deliciosos de Asia, desde las calles de Tokio
+                      hasta los mercados de Bangkok, todo desde la comodidad de
+                      tu hogar. Nuestro equipo de chefs y entusiastas de la
+                      comida asiática está dedicado a compartir recetas
+                      auténticas y consejos culinarios que te permitirán
+                      explorar la vasta y variada cocina de Asia. Cada receta
+                      que ofrecemos ha sido cuidadosamente seleccionada, probada
+                      y adaptada para garantizar que obtengas resultados
+                      excepcionales en tu propia cocina. Creemos que la cocina
+                      es una forma poderosa de conectar culturas y comunidades,
+                      y esperamos inspirarte a descubrir nuevos sabores,
+                      ingredientes y tradiciones culinarias a medida que
+                      explores nuestro sitio. Además de recetas, también
+                      compartimos historias fascinantes sobre la cultura
+                      gastronómica de Asia, recomendaciones de utensilios de
+                      cocina, y consejos para seleccionar ingredientes
+                      auténticos. Queremos ser tu recurso confiable para todo lo
+                      relacionado con la cocina asiática. En "AsiaGourmet," no
+                      solo celebramos los sabores excepcionales de Asia, sino
+                      que también promovemos la apreciación de la autenticidad y
+                      la exploración culinaria. ¡Únete a nosotros en este viaje
+                      y descubre el mundo de sabores que Asia tiene para
+                      ofrecer! Gracias por visitarnos y ser parte de nuestra
+                      comunidad. ¡Esperamos que disfrutes de tu tiempo aquí y te
+                      inspires a cocinar y experimentar con las delicias de
+                      Asia!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container" id="contact">
+        <div
+          class="row row-cols-1 row-cols-lg-3 gap-5 justify-content-center align-items-center"
+        >
+          <div class="col-lg-8 text-center text-white">
+            <h5 class="cairo fs-1">Contacto</h5>
+            <p>
+              ¿Tienes alguna pregunta o comentario? ¡Nos encantaría escucharte!
+              No dudes en ponerte en contacto con nosotros a través del
+              siguiente correo electrónico:
+            </p>
+          </div>
+          <div class="col">
+            <form action="#" class="d-flex flex-column gap-1">
+              <div class="mb-3">
+                <label
+                  for="exampleFormControlInput1"
+                  class="form-label text-white-50 hindiS fs-5"
+                  >Email
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="exampleFormControlInput1"
+                  class="form-label text-white-50 hindiS fs-5"
+                  >Nombre</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Nombre"
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="exampleFormControlTextarea1"
+                  class="form-label text-white-50 hindiS fs-5"
+                  >Mensaje</label
+                >
+                <textarea
+                  placeholder="Mensaje"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-light" type="button">
+                  Button
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col d-none d-lg-block">
+            <img
+              class="img-fluid imgEfect"
+              src="https://images.unsplash.com/photo-1630257527668-c27eb6a427a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="border-top border-white mt-5">
+      <div
+        class="container d-flex align-items-baseline justify-content-around p-3"
+      >
+        <div class="d-flex gap-3 align-items-baseline">
+          <img height="30px" src="menu.ico" alt="" />
+          <p class="hindiS fw-bold fs-6 text-white">© 2022 Company, Inc</p>
+        </div>
+        <div class="d-flex gap-3 align-items-baseline">
+          <a href="#" class="icon">
+            <svg
+              width="1.8rem"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                  fill="#ffffff"
+                ></path>
+                <path
+                  d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                  fill="#ffffff"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                  fill="#ffffff"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <a href="#" class="icon">
+            <svg
+              width="1.8rem"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
+                  fill="#ffffff"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-lg modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title cairo text-center fs-4 text-center"
+              id="foodTitle"
+            >
+              Sushi de Salmón y Aguacate
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex flex-column gap-2">
+            <div class="container">
+              <div class="">
+                <h4 class="cairo fs-5 fw-bolder">Ingredientes:</h4>
+                <p class="" id="foodIngrediente">
+                  Algas | nori | Arroz para sushi | Salmón fresco | Aguacate |
+                  Vinagre de arroz | Azúcar | Salsa de soja | Wasabi | Jengibre
+                  encurtido
+                </p>
+              </div>
+              <div class="">
+                <h4 class="cairo fs-5 fw-bolder">Instrucciones:</h4>
+                <p class="hindiS" id="foodPreparacion"></p>
+              </div>
+            </div>
+
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="img-fluid d-block w-100" id="imgFood" src="" />
+                </div>
+                <div class="carousel-item">
+                  <iframe
+                    id="view"
+                    width="100%"
+                    height="500"
+                    src="https://www.youtube.com/embed/_0Ffle6c-a4?si=P6KTHbYhpJopaCjE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const recetas = [
+        {
+          img: "https://images.unsplash.com/photo-1648146299011-2322d7ad577c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+          nombre: "Sushi de Salmón y Aguacate",
+          ingredientes: [
+            "Algas nori",
+            "Arroz para sushi",
+            "Salmón fresco",
+            "Aguacate",
+            "Vinagre de arroz",
+            "Azúcar",
+            "Salsa de soja",
+            "Wasabi",
+            "Jengibre encurtido",
+          ],
+          instrucciones: [
+            "Preparación del arroz: Lava el arroz y cocínalo siguiendo las instrucciones del paquete. Luego, mézclalo con vinagre de arroz, azúcar y sal para obtener el arroz para sushi.",
+            "Preparación de los ingredientes: Corta el salmón y el aguacate en tiras delgadas.",
+            "Armar los rollos: Coloca una hoja de alga nori en una esterilla de bambú cubierta con plástico. Extiende una capa fina de arroz sobre el alga nori, dejando un espacio de 1 cm en el borde superior. Coloca tiras de salmón y aguacate en el centro.",
+            "Enrollar el sushi: Usando la esterilla de bambú, comienza a enrollar el sushi desde la parte inferior, aplicando una ligera presión. Humedece el borde superior del alga nori con agua para sellar el rollo.",
+            "Cortar y servir: Corta el rollo en rodajas de aproximadamente 2,5 cm. Sirve con salsa de soja, wasabi y jengibre encurtido.",
+          ],
+          video:
+            "https://www.youtube.com/embed/_0Ffle6c-a4?si=P6KTHbYhpJopaCjE",
+        },
+        {
+          img: "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+          nombre: "Pollo al Curry Tailandés",
+          ingredientes: [
+            "Pechugas de pollo",
+            "Pasta de curry rojo tailandés",
+            "Leche de coco",
+            "Verduras (pimientos, zanahorias, brócoli)",
+            "Aceite de coco",
+            "Hojas de albahaca tailandesa",
+            "Salsa de pescado",
+            "Azúcar",
+          ],
+          instrucciones: [
+            "Corta el pollo en tiras y saltea en aceite de coco hasta que esté dorado.",
+            "Agrega la pasta de curry y cocina por unos minutos.",
+            "Añade las verduras y saltea hasta que estén tiernas.",
+            "Agrega la leche de coco, hojas de albahaca, salsa de pescado y azúcar. Cocina hasta que la salsa espese y los sabores se mezclen.",
+            "Sirve caliente con arroz al vapor",
+          ],
+          video:
+            "https://www.youtube.com/embed/RonfaPNercE?si=rhGz1LpuvqpHKShF",
+        },
+        {
+          img: "https://images.unsplash.com/photo-1626509653291-5558b258f107?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+          nombre: "Fideos Lo Mein con Ternera",
+          ingredientes: [
+            "Fideos lo mein",
+            "Ternera en tiras",
+            "Salsa de soja",
+            "Aceite de sésamo",
+            "Ajo picado",
+            "Verduras (pimientos, cebollas, zanahorias)",
+            "Salsa hoisin",
+          ],
+          instrucciones: [
+            "Cocina los fideos lo mein según las instrucciones del paquete. Enjuaga con agua fría y reserva.",
+            "En un wok o sartén grande, saltea la ternera en aceite de sésamo hasta que esté dorada. Luego, retira de la sartén.",
+            "En la misma sartén, saltea el ajo y las verduras hasta que estén tiernas.",
+            "Agrega los fideos cocidos, la salsa de soja y la salsa hoisin. Cocina hasta que todo esté bien mezclado.",
+            "Devuelve la ternera a la sartén y cocina por unos minutos más..",
+            "Sirve caliente.",
+          ],
+          video:
+            "https://www.youtube.com/embed/nChHh0f665Q?si=0Kq2-F6BTXPZVyYb",
+        },
+        {
+          img: "https://images.unsplash.com/photo-1541283014184-791fa57c0735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+          nombre: "Pad Thai de Camarones",
+          ingredientes: [
+            "Fideos de arroz",
+            "Camarones",
+            "Tofu cortado en cubos",
+            "Huevos",
+            "Cacahuetes tostados",
+            "Salsa de tamarindo",
+            "Azúcar de palma",
+            "Salsa de pescado",
+            "Brotes de soja",
+          ],
+          instrucciones: [
+            "Cocina los fideos de arroz según las instrucciones del paquete. Enjuaga con agua fría y reserva.",
+            "En un wok o sartén grande, saltea los camarones y el tofu hasta que estén cocidos. Luego, retíralos de la sartén.",
+            "En la misma sartén, bate los huevos y cocínalos hasta que estén revueltos.",
+            "Agrega los fideos cocidos, la salsa de tamarindo, el azúcar de palma y la salsa de pescado. Cocina hasta que todo esté bien mezclado.",
+            "Devuelve los camarones y el tofu a la sartén y mezcla con los fideos.",
+            "Sirve caliente, espolvoreado con cacahuetes tostados y acompañado de brotes de soja.",
+          ],
+          video:
+            "https://www.youtube.com/embed/fwV9CKgyFwI?si=5HIIUHAxM_f35QqL",
+        },
+      ];
+      const foodTitle = document.querySelector("#foodTitle");
+      const foodIngrediente = document.getElementById("foodIngrediente");
+      const foodPreparacion = document.getElementById("foodPreparacion");
+      const imgFood = document.getElementById("imgFood");
+      const view = document.getElementById("view");
+
+      function modal(i) {
+        foodTitle.textContent = recetas[i].nombre;
+        console.log(recetas[i]);
+        foodIngrediente.textContent = recetas[i].ingredientes
+          .toString()
+          .replaceAll(",", " | ");
+
+        let text = document.createElement("p");
+        recetas[i].instrucciones.map((item, i) => {
+          text.innerHTML += `${i + 1}) ${item} <br>`;
+        });
+        imgFood.src = recetas[i].img;
+        view.src = recetas[i].video;
+        foodPreparacion.classList.add("hindiS");
+        foodPreparacion.appendChild(text);
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

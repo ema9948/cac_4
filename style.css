@@ -1,0 +1,94 @@
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #131314 !important;
+}
+.display-2 {
+  text-shadow: 1px 1px 3px #ffffff;
+}
+.cairo {
+  font-family: "Cairo", sans-serif;
+}
+.hindiS {
+  font-family: "Hind Siliguri", sans-serif;
+}
+.PT {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.shadow-text {
+  text-shadow: -1px 1px 2px #ffffff;
+}
+
+.text-bg {
+  text-decoration: solid red;
+}
+
+.icon:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #ffffff;
+}
+.active {
+  color: rgb(143, 46, 46) !important;
+}
+.nav-link:hover {
+  transform: scale(1.1);
+  color: rgb(190, 190, 190) !important;
+}
+
+/* hero section */
+.hero {
+  height: calc(100vh - 56px);
+  background-size: cover;
+  background-position: center;
+}
+.imgEfect {
+  animation: imgForm 10s infinite both ease-in;
+}
+
+@keyframes imgForm {
+  0% {
+    border-radius: 67% 33% 68% 32% / 61% 61% 39% 39%;
+  }
+  50% {
+    border-radius: 81% 19% 68% 32% / 45% 74% 26% 55%;
+  }
+
+  75% {
+    border-radius: 60% 40% 83% 17% / 48% 80% 20% 52%;
+  }
+
+  100% {
+    border-radius: 67% 33% 68% 32% / 61% 61% 39% 39%;
+  }
+}
+
+/* now   collection*/
+
+.imgHover:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* contact */
+textarea {
+  resize: none !important;
+}
+
+/* receta */
+
+.carousel-control-next,
+.carousel-control-prev {
+  height: 90%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: rgb(119, 113, 113) !important;
+  border-radius: 10%;
+}
