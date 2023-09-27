@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <header class="position-sticky w-100">
+    <header class=" ">
       <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -37,7 +37,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse d-flex justify-content-end"
+            class="collapse navbar-collapse d-lg-flex justify-content-end"
             id="navbarNavAltMarkup"
           >
             <div class="navbar-nav me-5">
@@ -53,12 +53,12 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="d-flex flex-column gap-3">
       <section class="">
         <article class="background vh-100">
           <div class="container h-100">
             <div
-              class="row h-100 row-cols-2 justify-content-end align-items-center"
+              class="row h-100 row-cols-1 row-cols-md-2 justify-content-end align-items-center"
             >
               <div class="col text-white text-end">
                 <h1 class="">Confg Bs As</h1>
@@ -84,56 +84,73 @@
       <section>
         <article class="container">
           <div class="row row-cols-1">
-            <div class="col">
-              <h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                consectetur rem maiores dolores tempore, nihil possimus fuga
-                ipsam ut nisi adipisci iste ratione pariatur animi eos quisquam
-                cumque excepturi earum.
-              </h2>
+            <div class="col text-center">
+              <h2 class="fs-6 fw-light">CONOCE A LOS</h2>
+              <h2 class="fs-1">ORADORES</h2>
             </div>
             <div class="col">
-              <div class="card-group">
+              <div class="card-group gap-5">
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="..." />
+                  <img
+                    src="./assets/steve.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-body-secondary"
-                        >Last updated 3 mins ago</small
+                    <h5 class="card-title">
+                      <span class="bg-warning px-2 fs-6 rounded-2"
+                        >JavaScript</span
                       >
+                      <span class="bg-info text-white px-2 fs-6 rounded-2"
+                        >React</span
+                      >
+                      <p>Steve Jobs</p>
+                    </h5>
+                    <p class="card-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolorem, tempora obcaecati at, velit, vero debitis
+                      voluptates quam labore delectus incidunt quae ipsam hic.
+                      Harum maiores nam, suscipit eos facilis nobis?
                     </p>
                   </div>
                 </div>
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="..." />
+                  <img src="./assets/bill.jpg" class="card-img-top" alt="..." />
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This card has supporting text below as a natural lead-in
-                      to additional content.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-body-secondary"
-                        >Last updated 3 mins ago</small
+                    <h5 class="card-title">
+                      <span class="bg-warning px-2 fs-6 rounded-2"
+                        >JavaScript</span
                       >
+                      <span class="bg-info text-white px-2 fs-6 rounded-2"
+                        >React</span
+                      >
+                      <p>Bill Gates</p>
+                    </h5>
+                    <p class="card-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolorem, tempora obcaecati at, velit, vero debitis
+                      voluptates quam labore delectus incidunt quae ipsam hic.
+                      Harum maiores nam, suscipit eos facilis nobis?
                     </p>
                   </div>
                 </div>
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="..." />
+                  <img src="./assets/ada.jpeg" class="card-img-top" alt="..." />
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">
+                      <span class="bg-secondary text-white px-2 fs-6 rounded-2"
+                        >Negocios</span
+                      >
+                      <span class="bg-danger text-white px-2 fs-6 rounded-2"
+                        >Startups</span
+                      >
+                      <p>Ada Lovelace</p>
+                    </h5>
                     <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This card has even
-                      longer content than the first to show that equal height
-                      action.
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolorem, tempora obcaecati at, velit, vero debitis
+                      voluptates quam labore delectus incidunt quae ipsam hic.
+                      Harum maiores nam, suscipit eos facilis nobis?
                     </p>
                   </div>
                 </div>
@@ -142,65 +159,67 @@
           </div>
         </article>
       </section>
-      <section class="container">
-        <article class="row row-cols-2">
-          <div class="col">
-            <img src="assets/honolulu.jpg" alt="" class="img-fluid" />
-          </div>
-          <div class="col">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-              porro. Deserunt, eveniet architecto? Quidem, nulla? Officiis,
-              tenetur unde error repellat, saepe quaerat earum ex, eaque dolores
-              minima esse aliquid veniam.
-            </p>
+      <section class="">
+        <article class="w-100 bg-dark">
+          <div class="w-100 row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <img src="assets/honolulu.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col text-white py-3">
+              <h2>Bs As - Octubre</h2>
+              <p>
+                Buenos Aires es la provincia y localidad más grande del estado
+                de Argentina, en los Estados Unidos.Honolulu es la mas sureña de
+                entre las principales cuidades estadounidenses. Aunque el nombre
+                de Honolulu se refiere al área urbana en la costa sureste de la
+                isla de Oahu, la cuidade y el condado de Honolulu han formado
+                una cuidad-condado consolidada que cubre toda la cuidad
+                (aproximadamente 600km<sup>2</sup> de superficie).
+              </p>
+              <button class="btn btn-outline-light">Conocé más</button>
+            </div>
           </div>
         </article>
       </section>
       <section>
         <article class="container">
-          <div class="row row-cols-1">
-            <div class="col">
-              <h4>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repudiandae vel, corrupti illum architecto magnam sunt nesciunt
-                voluptate animi deserunt tempore placeat unde inventore optio
-                quas accusantium voluptas. Officiis, quibusdam alias!
-              </h4>
+          <div class="row row-cols-1 gap-3">
+            <div class="col text-center">
+              <h3 class="fs-6 fw-light fw-light">CONVÍERTETE EN UN</h3>
+              <h2 class="fs-1">ORADOR</h2>
+              <p>
+                Anótate como orador para dar una charla ignite. Cuéntanos de qué
+                quieres hablar!
+              </p>
             </div>
             <div class="col">
               <form action="" class="row">
                 <div class="mb-3 col-6">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >Email address</label
-                  >
                   <input
                     type="email"
                     class="form-control"
                     id="exampleFormControlInput1"
-                    placeholder="name@example.com"
+                    placeholder="Nombre"
                   />
                 </div>
                 <div class="mb-3 col-6">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >Email address</label
-                  >
                   <input
                     type="email"
                     class="form-control"
                     id="exampleFormControlInput1"
-                    placeholder="name@example.com"
+                    placeholder="Apellido"
                   />
                 </div>
                 <div class="mb-3 col-12">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Example textarea</label
-                  >
                   <textarea
-                    class="form-control"
+                    class="form-control py-3 fs-3"
+                    placeholder="Sobre qué quieres hablar?"
                     id="exampleFormControlTextarea1"
                     rows="3"
                   ></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                  <button class="btn text-white" type="button">Enviar</button>
                 </div>
               </form>
             </div>
@@ -208,6 +227,46 @@
         </article>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <ul
+          class="text-white d-flex flex-wrap justify-content-around align-items-center list-unstyled"
+        >
+          <li>
+            <a href="#" class="text-decoration-none text-white"
+              >Preguntas <br />
+              frecuentes
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-white"> Contácto </a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-white"> Prensa </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-decoration-none text-white">
+              Conferencias
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-white">
+              Términos y <br />
+              condiciones
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-white"> Privacidad </a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-white">
+              Estudiantes
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
